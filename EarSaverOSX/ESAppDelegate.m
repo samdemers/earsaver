@@ -7,12 +7,39 @@
 //
 
 #import "ESAppDelegate.h"
+#import "defaultvolume.h"
+
+@interface ESAppDelegate()
+
+@property (nonatomic) NSStatusItem *statusItem;
+
+@end
 
 @implementation ESAppDelegate
+{
+    void *_ctx;
+}
+
+- (void)awakeFromNib
+{
+    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    self.statusItem.menu = self.statusMenu;
+    self.statusItem.title = @"ES";
+    self.statusItem.highlightMode = YES;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    _ctx = maintainVolumeOnDefaultDeviceChange(0.1f);
+}
+
+- (IBAction)quitButtonPressed:(id)sender
+{
+    if (_ctx)
+    {
+        stopMaintainingVolumeOnDefaultDeviceChange(_ctx);
+    }
+    [NSApp terminate:self];
 }
 
 @end

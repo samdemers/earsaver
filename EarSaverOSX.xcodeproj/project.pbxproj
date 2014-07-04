@@ -18,6 +18,7 @@
 		7E66671C196644DA00479FDE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6666FB196644DA00479FDE /* Cocoa.framework */; };
 		7E666724196644DA00479FDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E666722196644DA00479FDE /* InfoPlist.strings */; };
 		7E666726196644DA00479FDE /* EarSaverOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E666725196644DA00479FDE /* EarSaverOSXTests.m */; };
+		7E6667301966493500479FDE /* defaultvolume.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E66672F1966493500479FDE /* defaultvolume.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		7E666721196644DA00479FDE /* EarSaverOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EarSaverOSXTests-Info.plist"; sourceTree = "<group>"; };
 		7E666723196644DA00479FDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E666725196644DA00479FDE /* EarSaverOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarSaverOSXTests.m; sourceTree = "<group>"; };
+		7E66672F1966493500479FDE /* defaultvolume.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = defaultvolume.c; sourceTree = "<group>"; };
+		7E6667311966494000479FDE /* defaultvolume.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = defaultvolume.h; path = ../defaultvolume.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 		7E666701196644DA00479FDE /* EarSaverOSX */ = {
 			isa = PBXGroup;
 			children = (
+				7E6667311966494000479FDE /* defaultvolume.h */,
+				7E66672F1966493500479FDE /* defaultvolume.c */,
 				7E66670D196644DA00479FDE /* ESAppDelegate.h */,
 				7E66670E196644DA00479FDE /* ESAppDelegate.m */,
 				7E666710196644DA00479FDE /* MainMenu.xib */,
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6667301966493500479FDE /* defaultvolume.c in Sources */,
 				7E66670F196644DA00479FDE /* ESAppDelegate.m in Sources */,
 				7E666708196644DA00479FDE /* main.m in Sources */,
 			);
@@ -385,11 +391,13 @@
 		7E66672A196644DA00479FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EarSaverOSX/EarSaverOSX-Prefix.pch";
 				INFOPLIST_FILE = "EarSaverOSX/EarSaverOSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,11 +406,13 @@
 		7E66672B196644DA00479FDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EarSaverOSX/EarSaverOSX-Prefix.pch";
 				INFOPLIST_FILE = "EarSaverOSX/EarSaverOSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -8,8 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ESAppDelegate : NSObject <NSApplicationDelegate>
+@interface ESAppDelegate : NSObject <NSApplicationDelegate, NSAlertDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSMenu *statusMenu;
+- (IBAction)quitButtonPressed:(id)sender;
 
 @end
