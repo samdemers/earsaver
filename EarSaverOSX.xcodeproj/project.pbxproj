@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E2ABEC01979C7B300EB9D77 /* defaultvolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultvolume.h; sourceTree = "<group>"; };
 		7E6666F8196644DA00479FDE /* EarSaverOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarSaverOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6666FB196644DA00479FDE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7E6666FE196644DA00479FDE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -52,7 +53,6 @@
 		7E666723196644DA00479FDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E666725196644DA00479FDE /* EarSaverOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarSaverOSXTests.m; sourceTree = "<group>"; };
 		7E66672F1966493500479FDE /* defaultvolume.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = defaultvolume.c; sourceTree = "<group>"; };
-		7E6667311966494000479FDE /* defaultvolume.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = defaultvolume.h; path = ../defaultvolume.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 		7E666701196644DA00479FDE /* EarSaverOSX */ = {
 			isa = PBXGroup;
 			children = (
-				7E6667311966494000479FDE /* defaultvolume.h */,
+				7E2ABEC01979C7B300EB9D77 /* defaultvolume.h */,
 				7E66672F1966493500479FDE /* defaultvolume.c */,
 				7E66670D196644DA00479FDE /* ESAppDelegate.h */,
 				7E66670E196644DA00479FDE /* ESAppDelegate.m */,
