@@ -30,14 +30,14 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    _ctx = maintainVolumeOnDefaultDeviceChange(0.1f);
+    _ctx = setVolumeOnDefaultDeviceChange(0.1f);
 }
 
 - (IBAction)quitButtonPressed:(id)sender
 {
     if (_ctx)
     {
-        stopMaintainingVolumeOnDefaultDeviceChange(_ctx);
+        stopSettingVolumeOnDefaultDeviceChange(_ctx);
     }
     [NSApp terminate:self];
 }

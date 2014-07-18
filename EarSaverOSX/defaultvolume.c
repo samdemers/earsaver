@@ -30,6 +30,7 @@ static void setDeviceChannelVolume(AudioDeviceID deviceID, UInt32 channel, Float
 
 static void setDeviceVolume(AudioObjectID deviceID, Float32 volume)
 {
+    // Assume a stereo device
     setDeviceChannelVolume(deviceID, 1, volume);
     setDeviceChannelVolume(deviceID, 2, volume);
 }
@@ -80,7 +81,7 @@ static int builtinAudioDeviceID()
     return deviceID;
 }
 
-void *maintainVolumeOnDefaultDeviceChange(Float32 volume)
+void *setVolumeOnDefaultDeviceChange(Float32 volume)
 {
     AudioDeviceID deviceID = builtinAudioDeviceID();
     if (deviceID == kAudioDeviceUnknown)
@@ -97,7 +98,7 @@ void *maintainVolumeOnDefaultDeviceChange(Float32 volume)
     return data;
 }
 
-void stopMaintainingVolumeOnDefaultDeviceChange(void *ctx)
+void stopSettingVolumeOnDefaultDeviceChange(void *ctx)
 {
     unregisterDefaultDeviceListener(ctx);
     free(ctx);
