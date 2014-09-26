@@ -24,7 +24,8 @@
 {
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.menu = self.statusMenu;
-    self.statusItem.title = @"ES";
+    self.statusItem.image = [NSImage imageNamed:@"RightVolumeStatusItem"];
+    self.statusItem.alternateImage = [NSImage imageNamed:@"RightVolumeStatusItemHighlighted"];
     self.statusItem.highlightMode = YES;
 }
 
