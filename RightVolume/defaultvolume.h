@@ -1,13 +1,13 @@
 //
 //  defaultvolume.h
-//  EarSaverOSX
+//  RightVolume
 //
 //  Created by Samuel Demers on 2014-07-03.
 //  Copyright (c) 2014 Samuel Demers. All rights reserved.
 //
 
-#ifndef EarSaverOSX_defaultvolume_h
-#define EarSaverOSX_defaultvolume_h
+#ifndef RightVolume_defaultvolume_h
+#define RightVolume_defaultvolume_h
 
 /**
  * Starting monitoring default audio device changes (which happen, for example, when earphones or speakers are

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7E6666F7196644DA00479FDE"
-               BuildableName = "EarSaverOSX.app"
-               BlueprintName = "EarSaverOSX"
-               ReferencedContainer = "container:EarSaverOSX.xcodeproj">
+               BuildableName = "RightVolume.app"
+               BlueprintName = "RightVolume"
+               ReferencedContainer = "container:RightVolume.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7E666718196644DA00479FDE"
-               BuildableName = "EarSaverOSXTests.xctest"
-               BlueprintName = "EarSaverOSXTests"
-               ReferencedContainer = "container:EarSaverOSX.xcodeproj">
+               BuildableName = "RightVolumeTests.xctest"
+               BlueprintName = "RightVolumeTests"
+               ReferencedContainer = "container:RightVolume.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E6666F7196644DA00479FDE"
-            BuildableName = "EarSaverOSX.app"
-            BlueprintName = "EarSaverOSX"
-            ReferencedContainer = "container:EarSaverOSX.xcodeproj">
+            BuildableName = "RightVolume.app"
+            BlueprintName = "RightVolume"
+            ReferencedContainer = "container:RightVolume.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E6666F7196644DA00479FDE"
-            BuildableName = "EarSaverOSX.app"
-            BlueprintName = "EarSaverOSX"
-            ReferencedContainer = "container:EarSaverOSX.xcodeproj">
+            BuildableName = "RightVolume.app"
+            BlueprintName = "RightVolume"
+            ReferencedContainer = "container:RightVolume.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E6666F7196644DA00479FDE"
-            BuildableName = "EarSaverOSX.app"
-            BlueprintName = "EarSaverOSX"
-            ReferencedContainer = "container:EarSaverOSX.xcodeproj">
+            BuildableName = "RightVolume.app"
+            BlueprintName = "RightVolume"
+            ReferencedContainer = "container:RightVolume.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

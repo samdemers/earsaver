@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E2AF27D19D5CFFA003D8770 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF26F19D5CFFA003D8770 /* MainMenu.xib */; };
+		7E2AF27F19D5CFFA003D8770 /* defaultvolume.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AF27119D5CFFA003D8770 /* defaultvolume.c */; };
+		7E2AF28319D5CFFA003D8770 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF27519D5CFFA003D8770 /* InfoPlist.strings */; };
+		7E2AF28519D5CFFA003D8770 /* ESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AF27819D5CFFA003D8770 /* ESAppDelegate.m */; };
+		7E2AF28719D5CFFA003D8770 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF27919D5CFFA003D8770 /* Images.xcassets */; };
+		7E2AF28919D5CFFA003D8770 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AF27A19D5CFFA003D8770 /* main.m */; };
+		7E2AF28B19D5CFFA003D8770 /* RightVolume-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF27B19D5CFFA003D8770 /* RightVolume-Info.plist */; };
+		7E2AF29019D5D086003D8770 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF28E19D5D086003D8770 /* Credits.rtf */; };
+		7E6666FC196644DA00479FDE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6666FB196644DA00479FDE /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E2AF27019D5CFFA003D8770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7E2AF27119D5CFFA003D8770 /* defaultvolume.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = defaultvolume.c; sourceTree = "<group>"; };
+		7E2AF27219D5CFFA003D8770 /* defaultvolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultvolume.h; sourceTree = "<group>"; };
+		7E2AF27619D5CFFA003D8770 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E2AF27719D5CFFA003D8770 /* ESAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAppDelegate.h; sourceTree = "<group>"; };
+		7E2AF27819D5CFFA003D8770 /* ESAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESAppDelegate.m; sourceTree = "<group>"; };
+		7E2AF27919D5CFFA003D8770 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7E2AF27A19D5CFFA003D8770 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E2AF27B19D5CFFA003D8770 /* RightVolume-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RightVolume-Info.plist"; sourceTree = "<group>"; };
+		7E2AF27C19D5CFFA003D8770 /* RightVolume-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RightVolume-Prefix.pch"; sourceTree = "<group>"; };
+		7E2AF28F19D5D086003D8770 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7E6666F8196644DA00479FDE /* RightVolume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightVolume.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6666FB196644DA00479FDE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7E6666FE196644DA00479FDE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7E6666FF196644DA00479FDE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7E666700196644DA00479FDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E6666F5196644DA00479FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6666FC196644DA00479FDE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E2AF26E19D5CFFA003D8770 /* RightVolume */ = {
+			isa = PBXGroup;
+			children = (
+				7E2AF27219D5CFFA003D8770 /* defaultvolume.h */,
+				7E2AF27119D5CFFA003D8770 /* defaultvolume.c */,
+				7E2AF27719D5CFFA003D8770 /* ESAppDelegate.h */,
+				7E2AF27819D5CFFA003D8770 /* ESAppDelegate.m */,
+				7E2AF26F19D5CFFA003D8770 /* MainMenu.xib */,
+				7E2AF27919D5CFFA003D8770 /* Images.xcassets */,
+				7E2AF28D19D5D039003D8770 /* Supporting Files */,
+			);
+			path = RightVolume;
+			sourceTree = "<group>";
+		};
+		7E2AF28D19D5D039003D8770 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E2AF27B19D5CFFA003D8770 /* RightVolume-Info.plist */,
+				7E2AF27519D5CFFA003D8770 /* InfoPlist.strings */,
+				7E2AF27A19D5CFFA003D8770 /* main.m */,
+				7E2AF27C19D5CFFA003D8770 /* RightVolume-Prefix.pch */,
+				7E2AF28E19D5D086003D8770 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E6666EF196644DA00479FDE = {
+			isa = PBXGroup;
+			children = (
+				7E2AF26E19D5CFFA003D8770 /* RightVolume */,
+				7E6666FA196644DA00479FDE /* Frameworks */,
+				7E6666F9196644DA00479FDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E6666F9196644DA00479FDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E6666F8196644DA00479FDE /* RightVolume.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E6666FA196644DA00479FDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E6666FB196644DA00479FDE /* Cocoa.framework */,
+				7E6666FD196644DA00479FDE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E6666FD196644DA00479FDE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E6666FE196644DA00479FDE /* AppKit.framework */,
+				7E6666FF196644DA00479FDE /* CoreData.framework */,
+				7E666700196644DA00479FDE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E6666F7196644DA00479FDE /* RightVolume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E666729196644DA00479FDE /* Build configuration list for PBXNativeTarget "RightVolume" */;
+			buildPhases = (
+				7E6666F4196644DA00479FDE /* Sources */,
+				7E6666F5196644DA00479FDE /* Frameworks */,
+				7E6666F6196644DA00479FDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RightVolume;
+			productName = EarSaverOSX;
+			productReference = 7E6666F8196644DA00479FDE /* RightVolume.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E6666F0196644DA00479FDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ES;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Samuel Demers";
+				TargetAttributes = {
+					7E6666F7196644DA00479FDE = {
+						DevelopmentTeam = ME5FMR24RS;
+					};
+				};
+			};
+			buildConfigurationList = 7E6666F3196644DA00479FDE /* Build configuration list for PBXProject "RightVolume" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E6666EF196644DA00479FDE;
+			productRefGroup = 7E6666F9196644DA00479FDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E6666F7196644DA00479FDE /* RightVolume */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E6666F6196644DA00479FDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2AF29019D5D086003D8770 /* Credits.rtf in Resources */,
+				7E2AF28719D5CFFA003D8770 /* Images.xcassets in Resources */,
+				7E2AF28319D5CFFA003D8770 /* InfoPlist.strings in Resources */,
+				7E2AF27D19D5CFFA003D8770 /* MainMenu.xib in Resources */,
+				7E2AF28B19D5CFFA003D8770 /* RightVolume-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E6666F4196644DA00479FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2AF27F19D5CFFA003D8770 /* defaultvolume.c in Sources */,
+				7E2AF28919D5CFFA003D8770 /* main.m in Sources */,
+				7E2AF28519D5CFFA003D8770 /* ESAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E2AF26F19D5CFFA003D8770 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2AF27019D5CFFA003D8770 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7E2AF27519D5CFFA003D8770 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2AF27619D5CFFA003D8770 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E2AF28E19D5D086003D8770 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2AF28F19D5D086003D8770 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E666727196644DA00479FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7E666728196644DA00479FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7E66672A196644DA00479FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RightVolume/RightVolume-Prefix.pch";
+				INFOPLIST_FILE = "RightVolume/RightVolume-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = RightVolume;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E66672B196644DA00479FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RightVolume/RightVolume-Prefix.pch";
+				INFOPLIST_FILE = "RightVolume/RightVolume-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = RightVolume;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E6666F3196644DA00479FDE /* Build configuration list for PBXProject "RightVolume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E666727196644DA00479FDE /* Debug */,
+				7E666728196644DA00479FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E666729196644DA00479FDE /* Build configuration list for PBXNativeTarget "RightVolume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E66672A196644DA00479FDE /* Debug */,
+				7E66672B196644DA00479FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E6666F0196644DA00479FDE /* Project object */;
+}
