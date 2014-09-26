@@ -14,8 +14,8 @@ Attribution
 -----------
 
 The menu bar icon contains the following materials:
- - Correct symbol (http://www.flaticon.com/free-icon/correct-symbol_25404) made by Dave Gandy is licensed under Creative Commons BY 3.0 
- - Audio volume (http://www.flaticon.com/free-icon/audio-volume_53824) made by Silviu Runceanu is licensed under Creative Commons BY 3.0
+ - Correct symbol (http://www.flaticon.com/free-icon/correct-symbol_25404) made by Dave Gandy is licensed under Creative Commons BY 3.0 (http://creativecommons.org/licenses/by/3.0/)
+ - Audio volume (http://www.flaticon.com/free-icon/audio-volume_53824) made by Silviu Runceanu is licensed under Creative Commons BY 3.0 (http://creativecommons.org/licenses/by/3.0/)
 
 Licensing
 ---------
