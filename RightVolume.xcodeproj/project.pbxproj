@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E2AF27D19D5CFFA003D8770 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF26F19D5CFFA003D8770 /* MainMenu.xib */; };
 		7E2AF27F19D5CFFA003D8770 /* defaultvolume.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AF27119D5CFFA003D8770 /* defaultvolume.c */; };
 		7E2AF28319D5CFFA003D8770 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF27519D5CFFA003D8770 /* InfoPlist.strings */; };
 		7E2AF28519D5CFFA003D8770 /* ESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AF27819D5CFFA003D8770 /* ESAppDelegate.m */; };
 		7E2AF28719D5CFFA003D8770 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF27919D5CFFA003D8770 /* Images.xcassets */; };
 		7E2AF28919D5CFFA003D8770 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2AF27A19D5CFFA003D8770 /* main.m */; };
-		7E2AF28B19D5CFFA003D8770 /* RightVolume-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF27B19D5CFFA003D8770 /* RightVolume-Info.plist */; };
 		7E2AF29019D5D086003D8770 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF28E19D5D086003D8770 /* Credits.rtf */; };
+		7E37257319D85D6900985A97 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2AF26F19D5CFFA003D8770 /* MainMenu.xib */; };
 		7E6666FC196644DA00479FDE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6666FB196644DA00479FDE /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,7 +137,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ES;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Samuel Demers";
 				TargetAttributes = {
 					7E6666F7196644DA00479FDE = {
@@ -172,8 +171,7 @@
 				7E2AF29019D5D086003D8770 /* Credits.rtf in Resources */,
 				7E2AF28719D5CFFA003D8770 /* Images.xcassets in Resources */,
 				7E2AF28319D5CFFA003D8770 /* InfoPlist.strings in Resources */,
-				7E2AF27D19D5CFFA003D8770 /* MainMenu.xib in Resources */,
-				7E2AF28B19D5CFFA003D8770 /* RightVolume-Info.plist in Resources */,
+				7E37257319D85D6900985A97 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +291,7 @@
 		7E66672A196644DA00479FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RightVolume/RightVolume-Prefix.pch";
@@ -310,9 +306,7 @@
 		7E66672B196644DA00479FDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RightVolume/RightVolume-Prefix.pch";
