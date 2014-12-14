@@ -13,11 +13,11 @@
  * Starting monitoring default audio device changes (which happen, for example, when earphones or speakers are
  * connected or disconnected). Reset the audio volume to the one specified whenever that happens.
  */
-void *setVolumeOnDefaultDeviceChange(Float32 volume);
+void *setVolumeOnJackChange(Float32 volume);
 
 /**
  * Cancel maintainVolumeOnDefaultDeviceChange() using the pointer it returned.
  */
-void stopSettingVolumeOnDefaultDeviceChange(void *ctx);
+void stopSettingVolumeOnJackChange(void *ctx);
 
 #endif

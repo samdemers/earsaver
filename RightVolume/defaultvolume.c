@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Samuel Demers. All rights reserved.
 //
 
-
+#include <AudioToolbox/AudioServices.h>
 #include <CoreAudio/CoreAudio.h>
 #include <CoreServices/CoreServices.h>
 
@@ -16,26 +16,25 @@ typedef struct
     Float32       volume;
 } CallbackData;
 
-static void setDeviceChannelVolume(AudioDeviceID deviceID, UInt32 channel, Float32 volume)
-{
-    AudioObjectPropertyAddress prop = {
-        kAudioDevicePropertyVolumeScalar,
-        kAudioDevicePropertyScopeOutput,
-        channel
-    };
-    
-    UInt32 dataSize = sizeof(volume);
-    verify_noerr(AudioObjectSetPropertyData(deviceID, &prop, 0, NULL, dataSize, &volume));
-}
-
 static void setDeviceVolume(AudioObjectID deviceID, Float32 volume)
 {
-    // Assume a stereo device
-    setDeviceChannelVolume(deviceID, 1, volume);
-    setDeviceChannelVolume(deviceID, 2, volume);
+    AudioObjectPropertyAddress prop = {
+        kAudioHardwareServiceDeviceProperty_VirtualMasterVolume,
+        kAudioDevicePropertyScopeOutput,
+        kAudioObjectPropertyElementMaster
+    };
+    if (AudioObjectHasProperty(deviceID, &prop))
+    {
+        UInt32 dataSize = sizeof(volume);
+        verify_noerr(AudioObjectSetPropertyData(deviceID, &prop, 0, NULL, dataSize, &volume));
+    }
+    else
+    {
+        fprintf(stderr, "Error: the audio device does not support volume control\n");
+    }
 }
 
-static OSStatus onDefaultDeviceChanged(AudioObjectID                       inObjectID,
+static OSStatus onDataSourceChanged(AudioObjectID                       inObjectID,
                                        UInt32                              inNumberAddresses,
                                        const AudioObjectPropertyAddress    inAddresses[],
                                        void*                               inClientData)
@@ -46,24 +45,25 @@ static OSStatus onDefaultDeviceChanged(AudioObjectID                       inObj
     return noErr;
 }
 
-static void registerDefaultDeviceListener(void *data)
+static void registerDefaultDeviceListener(CallbackData *data)
 {
     AudioObjectPropertyAddress prop = {
-        kAudioHardwarePropertyDefaultOutputDevice,
-        kAudioObjectPropertyScopeGlobal,
+        kAudioDevicePropertyJackIsConnected,
+        kAudioDevicePropertyScopeOutput,
         kAudioObjectPropertyElementMaster
     };
-    verify_noerr(AudioObjectAddPropertyListener(kAudioObjectSystemObject, &prop, onDefaultDeviceChanged, data));
+    
+    verify_noerr(AudioObjectAddPropertyListener(data->deviceID, &prop, onDataSourceChanged, data));
 }
 
-static void unregisterDefaultDeviceListener(void *data)
+static void unregisterDefaultDeviceListener(CallbackData *data)
 {
     AudioObjectPropertyAddress prop = {
-        kAudioHardwarePropertyDefaultOutputDevice,
-        kAudioObjectPropertyScopeGlobal,
+        kAudioDevicePropertyJackIsConnected,
+        kAudioDevicePropertyScopeOutput,
         kAudioObjectPropertyElementMaster
     };
-    verify_noerr(AudioObjectRemovePropertyListener(kAudioObjectSystemObject, &prop, onDefaultDeviceChanged, data));
+    verify_noerr(AudioObjectRemovePropertyListener(data->deviceID, &prop, onDataSourceChanged, data));
 }
 
 static int builtinAudioDeviceID()
@@ -81,7 +81,7 @@ static int builtinAudioDeviceID()
     return deviceID;
 }
 
-void *setVolumeOnDefaultDeviceChange(Float32 volume)
+void *setVolumeOnJackChange(Float32 volume)
 {
     AudioDeviceID deviceID = builtinAudioDeviceID();
     if (deviceID == kAudioDeviceUnknown)
@@ -98,7 +98,7 @@ void *setVolumeOnDefaultDeviceChange(Float32 volume)
     return data;
 }
 
-void stopSettingVolumeOnDefaultDeviceChange(void *ctx)
+void stopSettingVolumeOnJackChange(void *ctx)
 {
     unregisterDefaultDeviceListener(ctx);
     free(ctx);
