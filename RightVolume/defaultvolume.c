@@ -23,15 +23,8 @@ static void setDeviceVolume(AudioObjectID deviceID, Float32 volume)
         kAudioDevicePropertyScopeOutput,
         kAudioObjectPropertyElementMaster
     };
-    if (AudioObjectHasProperty(deviceID, &prop))
-    {
-        UInt32 dataSize = sizeof(volume);
-        verify_noerr(AudioObjectSetPropertyData(deviceID, &prop, 0, NULL, dataSize, &volume));
-    }
-    else
-    {
-        fprintf(stderr, "Error: the audio device does not support volume control\n");
-    }
+    UInt32 dataSize = sizeof(volume);
+    AudioObjectSetPropertyData(deviceID, &prop, 0, NULL, dataSize, &volume);
 }
 
 static OSStatus onDataSourceChanged(AudioObjectID                       inObjectID,
